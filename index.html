@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        .pig-face {
+            width: 300px;
+            height: 300px;
+            margin: 50px;
+            background-color: pink;
+            border-radius: 50%;
+            position: relative;
+            overflow: hidden;
+            box-shadow:  0 0 0 8px black;
+        }
+
+        .ear {
+            width: 90px;
+            height: 90px;
+            background-color: pink;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow:  0 0 0 8px black;
+        }
+
+        .left-ear {
+            top: 30px;
+            left: 70px;
+            transform: rotate(-60deg);
+        }
+
+        .right-ear {
+            top: 30px;
+            left: 250px;
+            transform: rotate(60deg);
+        }
+
+        .eye {
+            width: 70px;
+            height: 70px;
+            background-color: white;
+            border-radius: 50%;
+            position: absolute;
+            box-shadow:  0 0 0 4px black;
+        }
+
+        .pupil {
+            width: 30px;
+            height: 30px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+        }
+
+        .left-eye {
+            top: 50px;
+            left: 50px;
+        }
+
+        .right-eye {
+            top: 50px;
+            right: 50px;
+        }
+
+        .nose {
+            width: 180px;
+            height: 100px;
+            background-color: #f88181;
+            border-radius: 30%;
+            position: absolute;
+            top: 140px;
+            left: 60px;
+            box-shadow:  0 0 0 4px black;
+        }
+
+        .nostril {
+            width: 40px;
+            height: 40px;
+            background-color: black;
+            border-radius: 50%;
+            position: absolute;
+        }
+
+        .left-nostril {
+            top: 50%;
+            left: 25%;
+            transform: translate(-50%, -50%);
+        }
+
+        .right-nostril {
+            top: 50%;
+            left: 75%;
+            transform: translate(-50%, -50%);
+        }
+    </style>
+</head>
+<body>
+    <div class="ear left-ear"></div>
+    <div class="ear right-ear"></div>
+    <div class="pig-face">
+        <div class="eye left-eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="eye right-eye">
+            <div class="pupil"></div>
+        </div>
+        <div class="nose">
+            <div class="nostril left-nostril"></div>
+            <div class="nostril right-nostril"></div>
+        </div>
+    </div>
+</body>
+</html>
